@@ -582,7 +582,7 @@ export default function Registrations() {
           </div>
 
           <button
-            className="text-white border-[1px] p-[15px] rounded bg-primary-black w-[50%] mb-[30px] mt-[30px] font-extrabold text-2xl"
+            className="text-white border-[1px] p-[15px] rounded w-[50%] mb-[30px] mt-20 font-extrabold text-2xl hover:bg-[rgba(0,0,0,0.3)]"
             type="submit"
           >
             {loading ? 'Submitting...' : 'Register'}
