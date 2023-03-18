@@ -1,4 +1,7 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --primary: #1a232e;
   --secondary: #a4a3fe;
@@ -24,9 +27,6 @@
   border: 3px solid var(--primary);
 }
 
-@tailwind components;
-@tailwind utilities;
-
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +38,18 @@
 body {
   background: #1a232e;
   overflow-x: hidden;
-  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  body,
+  html {
+    background: #1a232e;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .gradient-01 {
