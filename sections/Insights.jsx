@@ -133,14 +133,24 @@ function Insights() {
                             as="h3"
                             className="text-lg font-medium leading-6 text-gray-900"
                           >
-                            Payment successful
+                            Data science and intelligent communication
                           </Dialog.Title>
                           <div className="mt-2">
-                            <p className="text-sm text-gray-500">
-                              Your payment has been successfully submitted.
-                              We’ve sent you an email with all of the details of
-                              your order.
-                            </p>
+                            <ol className="text-sm text-gray-500">
+                              <li>Multimedia security</li>
+                              <li>Steganography</li>
+                              <li>Biometric-based security systems</li>
+                              <li>Face/feature recognition</li>
+                              <li>
+                                AI/ML in signal processing for communications
+                              </li>
+                              <li>WLAN</li>
+                              <li>AI-based resource allocation</li>
+                              <li>Optimization in wireless</li>
+                              <li>6G communication</li>
+                              <li>Energy efficient networking techniques</li>
+                              <li>AI/ML for intelligent communications</li>
+                            </ol>
                           </div>
 
                           <div className="mt-4">
@@ -225,14 +235,20 @@ function Insights() {
                             as="h3"
                             className="text-lg font-medium leading-6 text-gray-900"
                           >
-                            Payment successful 2
+                            Robotics and Automation
                           </Dialog.Title>
                           <div className="mt-2">
-                            <p className="text-sm text-gray-500">
-                              Your payment has been successfully submitted.
-                              We've sent you an email with all of the details of
-                              your order.
-                            </p>
+                            <ul className="text-sm text-gray-500">
+                              <li>Defense and Surveillance</li>
+                              <li>Manufacturing sector</li>
+                              <li>Automotive</li>
+                              <li>Aerospace</li>
+                              <li>Medical sector</li>
+                              <li>Industrial IoT</li>
+                              <li>Industry 4.0</li>
+                              <li>Robotics in Agriculture</li>
+                              <li>Robotics in Healthcare</li>
+                            </ul>
                           </div>
 
                           <div className="mt-4">
@@ -317,14 +333,18 @@ function Insights() {
                             as="h3"
                             className="text-lg font-medium leading-6 text-gray-900"
                           >
-                            Payment successful 3
+                            Bigdata analytics
                           </Dialog.Title>
                           <div className="mt-2">
-                            <p className="text-sm text-gray-500">
-                              Your payment has been successfully submitted.
-                              We've sent you an email with all of the details of
-                              your order.
-                            </p>
+                            <ul className="text-sm text-gray-500">
+                              <li>Artificial Intelligence</li>
+                              <li>Deep Learning</li>
+                              <li>Reinforcement learning</li>
+                              <li>Cybersecurity and intelligence</li>
+                              <li>Scientific research with massive data</li>
+                              <li>Data Mining</li>
+                              <li>Data Visualization</li>
+                            </ul>
                           </div>
 
                           <div className="mt-4">
@@ -409,14 +429,22 @@ function Insights() {
                             as="h3"
                             className="text-lg font-medium leading-6 text-gray-900"
                           >
-                            Payment successful 4
+                            Applied Mathematics
                           </Dialog.Title>
                           <div className="mt-2">
-                            <p className="text-sm text-gray-500">
-                              Your payment has been successfully submitted.
-                              We've sent you an email with all of the details of
-                              your order.
-                            </p>
+                            <ul className="text-sm text-gray-500">
+                              <li>Liner algebra</li>
+                              <li>
+                                Differential equations and Fourier analysis
+                              </li>
+                              <li>Differential and computational geometry</li>
+                              <li>Probability and statistics</li>
+                              <li>Numerical analysis</li>
+                              <li>Operations research and optimization</li>
+                              <li>Experimental physics</li>
+                              <li>Chemical sciences</li>
+                              <li>Biological science</li>
+                            </ul>
                           </div>
 
                           <div className="mt-4">
