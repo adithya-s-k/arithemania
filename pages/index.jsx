@@ -1,5 +1,6 @@
 import { Navbar, Footer } from '../components';
 import { About, Explore, Feedback, Hero, WhatsNew, World } from '../sections';
+import FAQ from '../sections/FAQ';
 // import styles from '../styles';
 
 const Home = () => (
@@ -24,6 +25,7 @@ const Home = () => (
     <div className="relative">
       <div className="gradient-04 z-0" />
     </div>
+    <FAQ />
     <Footer />
   </div>
 );
