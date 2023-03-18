@@ -29,7 +29,10 @@ function Navbar() {
         <div
           className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
         >
-          <Link href="/" className="hover:bg-slate-300">
+          <Link
+            href="https://shunyapes.com/"
+            className="hover:opacity-20 transition-opacity duration-300 z-30"
+          >
             <HiOutlineHome className="w-[40px] h-[40px] object-contain text-white" />
           </Link>
           <button

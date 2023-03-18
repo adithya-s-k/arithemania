@@ -10,6 +10,7 @@
     "export": "npm run build && next export -o _static"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.13",
     "eslint-config-next": "13.0.3",
     "firebase": "^9.18.0",
     "framer-motion": "^7.6.7",

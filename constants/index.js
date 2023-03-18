@@ -96,27 +96,23 @@ export const newFeatures = [
 export const insights = [
   {
     imgUrl: './assets/dataScience.png',
-    title: 'Data science',
-    subtitle:
-      'Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.',
+    title: 'Data science and intelligent communication',
+    subtitle: 'powered by IEEE SPS and ComSoc Bangalore Chapters',
   },
   {
     imgUrl: './assets/robotics.webp',
     title: 'Robotics and Automation',
-    subtitle:
-      'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
+    subtitle: 'powered by IEEE RAS Bangalore Chapter',
   },
   {
     imgUrl: './assets/bigData.png',
     title: 'Bigdata analytics',
-    subtitle:
-      'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
+    subtitle: 'powered by IEEE CS Bangalore Chapter',
   },
   {
     imgUrl: './assets/appliedMath.png',
     title: 'Applied Mathematics',
-    subtitle:
-      'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
+    subtitle: 'powered by IEEE student branch, PESU',
   },
 ];
 
