@@ -43,22 +43,22 @@ const World = () => (
         >
           <div className="flex justify-center items-center flex-wrap sm:flex-nowrap">
             <img
-              src="./assets/1.svg"
+              src="./assets/1.png"
               alt="sponsors"
               className="w-[300px] h-fit sm:w-[400px] sm:h-[400px] object-contain px-10"
             />
             <img
-              src="./assets/2.svg"
+              src="./assets/2.png"
               alt="sponsors"
               className="w-[300px] h-fit sm:w-[400px] sm:h-[400px] object-contain px-10 "
             />
             <img
-              src="./assets/3.svg"
+              src="./assets/3.png"
               alt="sponsors"
               className="w-[300px] h-fit sm:w-[400px] sm:h-[400px] object-contain px-10"
             />
             <img
-              src="./assets/4.svg"
+              src="./assets/4.png"
               alt="sponsors"
               className="w-[300px] h-fit sm:w-[400px] sm:h-[400px] object-contain px-10"
             />
