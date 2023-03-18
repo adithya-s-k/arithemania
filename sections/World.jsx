@@ -45,22 +45,22 @@ const World = () => (
             <img
               src="./assets/1.png"
               alt="sponsors"
-              className="w-[300px] h-fit sm:w-[400px] sm:h-[400px] object-contain px-10"
+              className="w-[300px] h-fit sm:w-[400px] sm:h-[400px] object-contain p-10 "
             />
             <img
               src="./assets/2.png"
               alt="sponsors"
-              className="w-[300px] h-fit sm:w-[400px] sm:h-[400px] object-contain px-10 "
+              className="w-[300px] h-fit sm:w-[400px] sm:h-[400px] object-contain p-10 "
             />
             <img
               src="./assets/3.png"
               alt="sponsors"
-              className="w-[300px] h-fit sm:w-[400px] sm:h-[400px] object-contain px-10"
+              className="w-[300px] h-fit sm:w-[400px] sm:h-[400px] object-contain p-10"
             />
             <img
               src="./assets/4.png"
               alt="sponsors"
-              className="w-[300px] h-fit sm:w-[400px] sm:h-[400px] object-contain px-10"
+              className="w-[300px] h-fit sm:w-[400px] sm:h-[400px] object-contain p-10"
             />
           </div>
         </motion.div>

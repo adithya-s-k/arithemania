@@ -6,7 +6,7 @@ import React from 'react';
 
 function FAQ() {
   return (
-    <section className=" text-gray-100">
+    <section className=" text-gray-100 h-[70vh] flex justify-center items-center">
       <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8 gradient-05 rounded-[32px] border-[1px] border-[#6A6A6A]">
         <h2 className="text-2xl font-semibold sm:text-4xl">
           Frequently Asked Questions
