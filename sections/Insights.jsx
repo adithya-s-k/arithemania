@@ -12,8 +12,8 @@ import { Dialog, Transition } from '@headlessui/react';
 import { fadeIn, staggerContainer } from '../utils/motion';
 
 import styles from '../styles';
-import { insights } from '../constants';
-import { InsightCard, TitleText, TypingText } from '../components';
+
+import { TitleText, TypingText } from '../components';
 
 function Insights() {
   const [isOpen1, setIsOpen1] = useState(false);

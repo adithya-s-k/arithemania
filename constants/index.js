@@ -2,7 +2,7 @@ export const exploreWorlds = [
   {
     id: 'world-1',
     imgUrl: './assets/dataScience.png',
-    title: 'Data science',
+    title: 'Data science & Communication',
     tracks: [
       'Multimedia security',
       'Steganography',
@@ -49,7 +49,7 @@ export const exploreWorlds = [
   {
     id: 'world-4',
     imgUrl: './assets/appliedMath.png',
-    title: 'Applied Mathematics',
+    title: 'Applied Math & Applications',
     tracks: [
       'Linear algebra',
       'Differential equations and Fourier analysis',

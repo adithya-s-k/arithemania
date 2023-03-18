@@ -16,7 +16,7 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title="| About arithemania" textStyles="text-center" />
+      <TypingText title="| About Arithemania 2.0" textStyles="text-center" />
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
@@ -25,7 +25,7 @@ const About = () => (
           <span className="font-extrabold text-white">Arithemania</span>,
           Shunya's signature event and the{' '}
           <span className="font-extrabold text-white">
-            first-ever 30-hour hackathon{' '}
+            first ever 30-hour hackathon{' '}
           </span>{' '}
           based on
           <span className="font-extrabold text-[#9cb1fd]">
