@@ -85,16 +85,19 @@ function Hero() {
   return (
     <>
       {isMobile ? (
-        <></>
+        <section className="80vh">
+          <img src="./assets/heroM.png" className="z-[100]" alt="" />
+        </section>
       ) : (
-        <section className={`${styles.yPaddings}  h-[100vh]`}>
-          <Spline
-            scene="https://prod.spline.design/GLps9wZiqSGfvIT1/scene.splinecode"
-            className="z-50 hidden sm:block"
-            // className="z-50 "
-          />
+        <section className={`${styles.yPaddings}  h-[80vh]`}>
+          <img src="./assets/hero.png" className="z-[100]" alt="" />
         </section>
       )}
+      {/* <Spline
+        scene="https://prod.spline.design/GLps9wZiqSGfvIT1/scene.splinecode"
+        className="z-50 hidden sm:block"
+        // className="z-50 "
+      /> */}
     </>
   );
 }
