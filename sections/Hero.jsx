@@ -1,10 +1,11 @@
+/* eslint-disable react/jsx-no-useless-fragment */
 /* eslint-disable import/no-duplicates */
 /* eslint-disable import/order */
 /* eslint-disable react/function-component-definition */
 
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 // import { motion } from 'framer-motion';
 import Spline from '@splinetool/react-spline';
 import styles from '../styles';
@@ -70,44 +71,31 @@ import styles from '../styles';
 // export default Hero;
 
 function Hero() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  React.useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth < 768); // set to true if screen width is less than 768px
+    }
+
+    handleResize(); // set initial value on mount
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   return (
-    <section className={`${styles.yPaddings}  h-[100vh]`}>
-      {/* <div className="absolute m-auto z-[100]">
-        <motion.div
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="text-5xl font-bold text-white"
-        >
-          Shunya
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1 }}
-          className="text-5xl font-bold text-white"
-        >
-          presents
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5 }}
-          className="text-5xl font-bold text-white"
-        >
-          Arithemania 2.0
-        </motion.div>
-      </div> */}
-      <Spline
-        scene="https://prod.spline.design/GLps9wZiqSGfvIT1/scene.splinecode"
-        // className="z-50 hidden sm:block"
-        className="z-50 "
-      />
-      {/* <Spline
-        scene="https://prod.spline.design/jl6Krd7ogz9unygH/scene.splinecode"
-        className="z-50 sm:hidden block"
-      /> */}
-    </section>
+    <>
+      {isMobile ? (
+        <></>
+      ) : (
+        <section className={`${styles.yPaddings}  h-[100vh]`}>
+          <Spline
+            scene="https://prod.spline.design/GLps9wZiqSGfvIT1/scene.splinecode"
+            className="z-50 hidden sm:block"
+            // className="z-50 "
+          />
+        </section>
+      )}
+    </>
   );
 }
 

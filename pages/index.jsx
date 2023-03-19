@@ -12,8 +12,9 @@ const Home = () => (
       <About />
     </div>
     <div className="relative">
-      <div className="gradient-01 z-0" />
+      <div className="gradient-04 z-0" />
       <Hero />
+
       <div className="gradient-03 z-0" />
       <Explore />
     </div>

@@ -29,7 +29,7 @@ import { db } from '../firebase/firebase';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Registrations() {
-  const [memberCount, setMemberCount] = useState(3);
+  const [memberCount, setMemberCount] = useState(4);
 
   const [teamMembers, setTeamMembers] = useState([
     {
@@ -80,6 +80,22 @@ export default function Registrations() {
       is_hostellite: false,
       hostel_room: '',
     },
+    {
+      id: 4,
+      name: '',
+      srn: '',
+      email: '',
+      phone: '',
+      semester: 2,
+      campus: 'RR',
+      branch: 'CSE',
+      other_branch: '',
+      gender: 'Male',
+      guardian_name: '',
+      guardian_phone: '',
+      is_hostellite: false,
+      hostel_room: '',
+    },
   ]);
 
   const [teamName, setTeamName] = useState('');
@@ -88,40 +104,41 @@ export default function Registrations() {
   );
   const [problemStatement, setProblemStatement] = useState('');
   const [solution, setSolution] = useState('');
+  const [link, setLink] = useState('');
 
   const [registeredTeams, setRegisteredTeams] = useState([]);
 
   const [loading, setLoading] = useState(false);
 
-  const addMember = () => {
-    setMemberCount((prev) => prev + 1);
-    setTeamMembers((prev) => [
-      ...prev,
-      {
-        id: 4,
-        name: '',
-        srn: '',
-        email: '',
-        phone: '',
-        semester: 2,
-        campus: 'RR',
-        branch: 'CSE',
-        other_branch: '',
-        gender: 'Male',
-        guardian_name: '',
-        guardian_phone: '',
-        is_hostellite: false,
-        hostel_room: '',
-      },
-    ]);
-    console.log(teamMembers);
-  };
+  // const addMember = () => {
+  //   setMemberCount((prev) => prev + 1);
+  //   setTeamMembers((prev) => [
+  //     ...prev,
+  //     {
+  //       id: 4,
+  //       name: '',
+  //       srn: '',
+  //       email: '',
+  //       phone: '',
+  //       semester: 2,
+  //       campus: 'RR',
+  //       branch: 'CSE',
+  //       other_branch: '',
+  //       gender: 'Male',
+  //       guardian_name: '',
+  //       guardian_phone: '',
+  //       is_hostellite: false,
+  //       hostel_room: '',
+  //     },
+  //   ]);
+  //   console.log(teamMembers);
+  // };
 
-  const removeMember = () => {
-    setMemberCount((prev) => prev - 1);
-    setTeamMembers((prev) => prev.slice(0, -1));
-    console.log(teamMembers);
-  };
+  // const removeMember = () => {
+  //   setMemberCount((prev) => prev - 1);
+  //   setTeamMembers((prev) => prev.slice(0, -1));
+  //   console.log(teamMembers);
+  // };
 
   const validateData = (e) => {
     e.preventDefault();
@@ -143,6 +160,10 @@ export default function Registrations() {
     }
     if (solution.length === 0) {
       toast('Solution cannot be empty');
+      return;
+    }
+    if (link.length === 0) {
+      toast('Link cannot be empty');
       return;
     }
     for (let i = 0; i < teamMembers.length; i++) {
@@ -177,7 +198,7 @@ export default function Registrations() {
         }
       }
       if (member.guardian_name.length === 0) {
-        toast(`Guardian Name - ${member.id} empty`);
+        toast(`Parents Name - ${member.id} empty`);
         return;
       }
       if (
@@ -185,7 +206,7 @@ export default function Registrations() {
         member.guardian_phone.toString().length < 10 ||
         member.guardian_phone.toString().length > 10
       ) {
-        toast(`Gaurdian Phone - ${member.id} invalid`);
+        toast(`Parents Phone - ${member.id} invalid`);
         return;
       }
       if (member.is_hostellite) {
@@ -217,10 +238,11 @@ export default function Registrations() {
   const handleSubmit = async () => {
     const resetData = () =>
       new Promise(() => {
-        setMemberCount(3);
+        setMemberCount(4);
         setTeamName('');
         setProblemStatement('');
         setSolution('');
+        setLink('');
         setTeamMembers([
           {
             id: 1,
@@ -270,6 +292,22 @@ export default function Registrations() {
             is_hostellite: false,
             hostel_room: '',
           },
+          {
+            id: 4,
+            name: '',
+            srn: '',
+            email: '',
+            phone: '',
+            semester: 2,
+            campus: 'RR',
+            branch: 'CSE',
+            other_branch: '',
+            gender: 'Male',
+            guardian_name: '',
+            guardian_phone: '',
+            is_hostellite: false,
+            hostel_room: '',
+          },
         ]);
         setRegisteredTeams([]);
       });
@@ -281,6 +319,7 @@ export default function Registrations() {
           domain,
           problemStateMent: problemStatement,
           solution,
+          link,
           teamMembers,
         });
         await resetData();
@@ -354,12 +393,21 @@ export default function Registrations() {
             ></textarea>
           </label>
 
+          <label className="text-lg flex flex-col font-mono text-white mb-6 font-bold w-full">
+            Link
+            <input
+              className="text-base focus:outline-none w-full min-h-40 rounded mt-4 pl-2 pr-2 text-white font-mono font-normal bg-transparent border-[1px] border-[#374151]"
+              value={link}
+              onChange={(e) => setLink(e.target.value)}
+            ></input>
+          </label>
+
           <div className="flex flex-col mt-[30px] w-full">
             <div className="flex flex-row items-center justify-between mb-[20px]">
               <h2 className="text-2xl font-bold text-white font-mono text">
                 Team Details
               </h2>
-              {memberCount === 3 && (
+              {/* {memberCount === 3 && (
                 <button
                   className="text-white font-mono font-bold text-base border-[1px] border-[#374151] rounded p-[3px] cursor-pointer"
                   onClick={addMember}
@@ -374,7 +422,7 @@ export default function Registrations() {
                 >
                   Remove Member
                 </button>
-              )}
+              )} */}
             </div>
 
             <div className="w-full h-auto flex flex-col gap-8 md:flex-row">

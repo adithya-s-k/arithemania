@@ -44,6 +44,7 @@ const Explore = () => {
           ))}
         </div>
       </motion.div>
+      <div className="gradient-02 z-0" />
     </section>
   );
 };
