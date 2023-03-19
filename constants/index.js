@@ -72,24 +72,24 @@ export const startingFeatures = [
 
 export const newFeatures = [
   {
-    imgUrl: './icons/test.svg',
-    title: 'Jackpot questions',
-    subtitle: 'A quiz with a jackpot prize for the winner. ',
+    imgUrl: './icons/calendar.svg',
+    title: 'Date',
+    subtitle: '8th - 9th April 2023',
+  },
+  {
+    imgUrl: './icons/map.svg',
+    title: 'Venue',
+    subtitle: 'PESU52, Bangalore',
   },
   {
     imgUrl: './icons/online-learning.svg',
-    title: 'Mentorship',
-    subtitle: 'Get mentorship from officials from the industry',
+    title: 'Team Size',
+    subtitle: 'Exacly 4 members',
   },
   {
-    imgUrl: './icons/online-learning.svg',
-    title: 'Mentorship',
-    subtitle: 'Get mentorship from officials from the industry',
-  },
-  {
-    imgUrl: './icons/online-learning.svg',
-    title: 'Mentorship',
-    subtitle: 'Get mentorship from officials from the industry',
+    imgUrl: './icons/calendar.svg',
+    title: 'DeadLine',
+    subtitle: '11:59 PM 31th March 2023',
   },
 ];
 

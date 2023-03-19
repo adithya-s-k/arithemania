@@ -1,3 +1,5 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable implicit-arrow-linebreak */
 /* eslint-disable react/jsx-no-useless-fragment */
 /* eslint-disable import/no-duplicates */
 /* eslint-disable import/order */
@@ -7,7 +9,8 @@
 
 import React, { useState } from 'react';
 // import { motion } from 'framer-motion';
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
+import { useRouter } from 'next/router';
 import styles from '../styles';
 // import {
 //   // planetVariants,
@@ -72,7 +75,7 @@ import styles from '../styles';
 
 function Hero() {
   const [isMobile, setIsMobile] = useState(false);
-
+  const router = useRouter();
   React.useEffect(() => {
     function handleResize() {
       setIsMobile(window.innerWidth < 768); // set to true if screen width is less than 768px
@@ -90,6 +93,28 @@ function Hero() {
         </section>
       ) : (
         <section className={`${styles.yPaddings}  h-[80vh]`}>
+          <div className="absolute right-[100px] bottom-0 z-50">
+            <button
+              type="button"
+              className="flex items-center h-fit py-4 px-6 bg-[#617d91] rounded-[32px] gap-[12px]"
+              onClick={
+                () =>
+                  router.push(
+                    'https://my.spline.design/laptoparithemaniacopy-54185d9f3bb79f7ac9dcb4c28941cf83/'
+                  )
+                // eslint-disable-next-line react/jsx-curly-newline
+              }
+            >
+              <img
+                src="/headset.svg"
+                alt="headset"
+                className="w-[24px] h-[24px] object-contain"
+              />
+              <span className="font-normal text-[16px] text-white">
+                3D View
+              </span>
+            </button>
+          </div>
           <img src="./assets/hero.png" className="z-[100]" alt="" />
         </section>
       )}
