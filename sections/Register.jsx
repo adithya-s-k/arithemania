@@ -425,11 +425,11 @@ export default function Registrations() {
               )} */}
             </div>
 
-            <div className="w-full h-auto flex flex-col gap-8 md:flex-row">
+            <div className="w-full h-auto flex flex-col gap-8 md:justify-center md:flex-row md:flex-wrap">
               {teamMembers.map((data, index) => (
                 <div
                   key={index}
-                  className="flex sm:w-3/12 flex-col rounded-[20px] border-[1px] border-[#6A6A6A] relative p-10 gradient-05"
+                  className="flex sm:w-3/12 flex-col rounded-[20px] border-[1px] border-[#6A6A6A] relative p-10 gradient-05 md:w-[calc(50%-32px)]"
                 >
                   <span className="text-lg text-white font-bold font-mono mb-[10px]">
                     Member {data.id}:
