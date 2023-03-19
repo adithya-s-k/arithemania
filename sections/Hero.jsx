@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable comma-dangle */
 /* eslint-disable implicit-arrow-linebreak */
 /* eslint-disable react/jsx-no-useless-fragment */
@@ -8,7 +9,7 @@
 'use client';
 
 import React, { useState } from 'react';
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 // import Spline from '@splinetool/react-spline';
 import { useRouter } from 'next/router';
 import styles from '../styles';
@@ -18,6 +19,7 @@ import styles from '../styles';
 //   staggerContainer,
 //   textVariant,
 // } from '../utils/motion';
+import { textVariant } from '../utils/motion';
 
 // const Hero = () => (
 //   <section className={`${styles.yPaddings}  h-[100vh]`}>
@@ -88,11 +90,21 @@ function Hero() {
   return (
     <>
       {isMobile ? (
-        <section className="80vh">
-          <img src="./assets/heroM.png" className="z-[100]" alt="" />
-        </section>
+        <>
+          <motion.div
+            className="80vh"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
+            <img src="./assets/heroM.png" className="z-[100]" alt="" />
+          </motion.div>
+        </>
       ) : (
-        <section className={`${styles.yPaddings}  h-[80vh]`}>
+        <motion.div
+          variants={textVariant(0.5)}
+          className={`${styles.yPaddings}  h-[80vh]`}
+        >
           <div className="absolute right-[100px] bottom-0 z-50">
             <button
               type="button"
@@ -115,8 +127,14 @@ function Hero() {
               </span>
             </button>
           </div>
-          <img src="./assets/hero.png" className="z-[100]" alt="" />
-        </section>
+          <motion.img
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            src="./assets/hero.png"
+            alt=""
+          />
+        </motion.div>
       )}
       {/* <Spline
         scene="https://prod.spline.design/GLps9wZiqSGfvIT1/scene.splinecode"
