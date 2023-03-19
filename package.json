@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.13",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.269",
     "eslint-config-next": "13.0.3",
     "firebase": "^9.18.0",
     "framer-motion": "^7.6.7",

@@ -7,7 +7,7 @@ const Home = () => (
   <div className="bg-primary-black overflow-hidden w-[100vw]">
     <div className="relative">
       <div className="gradient-03 z-0" />
-      <div className="gradient-04 z-0" />
+      {/* <div className="gradient-04 -z-10" /> */}
       <Navbar />
       <Hero />
     </div>
