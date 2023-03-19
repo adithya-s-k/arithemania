@@ -314,6 +314,7 @@ export default function Registrations() {
 
     const submitData = async () => {
       try {
+        setLoading(true);
         await setDoc(doc(db, 'teams', teamName), {
           teamName,
           domain,
@@ -321,10 +322,14 @@ export default function Registrations() {
           solution,
           link,
           teamMembers,
-        });
+        }).then(() => {
+          setLoading(false);
+          toast('Your response has been successfully submitted.');
+        })
         await resetData();
       } catch (err) {
         toast('There seems to be a problem submitting your response.');
+        setLoading(false);
       }
     };
     submitData();
@@ -396,7 +401,7 @@ export default function Registrations() {
           <label className="text-lg flex flex-col font-mono text-white mb-6 font-bold w-full">
             Link
             <input
-              className="text-base focus:outline-none w-full min-h-40 rounded mt-4 pl-2 pr-2 text-white font-mono font-normal bg-transparent border-[1px] border-[#374151]"
+              className="text-base focus:outline-none w-full h-12 rounded mt-4 pl-2 pr-2 text-white font-mono font-normal bg-transparent border-[1px] border-[#374151]"
               value={link}
               onChange={(e) => setLink(e.target.value)}
             ></input>
