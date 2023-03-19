@@ -1,13 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { TypingText } from '../components';
+import { TitleText } from '../components';
 
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
 
 const About = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section className={`${styles.paddings1} relative z-10`}>
     <div className="gradient-02 z-0" />
     <motion.div
       variants={staggerContainer}
@@ -16,7 +16,7 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title="| About Arithemania 2.0" textStyles="text-center" />
+      <TitleText title="Arithemania 2.0" textStyles="text-center" />
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
