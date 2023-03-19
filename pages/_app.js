@@ -1,5 +1,5 @@
 import Head from 'next/head';
-
+import { CookiesProvider } from 'react-cookie';
 import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps }) => (
@@ -17,7 +17,9 @@ const MyApp = ({ Component, pageProps }) => (
         href="https://stijndv.com/fonts/Eudoxus-Sans.css"
       />
     </Head>
-    <Component {...pageProps} />
+    <CookiesProvider>
+      <Component {...pageProps} />
+    </CookiesProvider>
   </>
 );
 
