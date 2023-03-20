@@ -415,7 +415,7 @@ export default function Registrations() {
             </label>
 
             <label className="text-lg flex flex-col font-mono text-white mb-6 font-bold w-full">
-              Link
+              Github Link
               <input
                 className="text-base focus:outline-none w-full h-12 rounded mt-4 pl-2 pr-2 text-white font-mono font-normal bg-transparent border-[1px] border-[#374151]"
                 value={link}
@@ -581,7 +581,7 @@ export default function Registrations() {
                     </label>
 
                     <label className="flex flex-col font-mono text-white mb-6 font-bold">
-                      Guardian Name
+                      Parents Name
                       <input
                         className="text-base focus:outline-none w-full h-8 rounded mt-4 pl-2 pr-2 text-white font-mono font-normal bg-primary-black border-[1px] border-[#374151]"
                         value={data.guardian_name}
@@ -597,7 +597,7 @@ export default function Registrations() {
                     </label>
 
                     <label className="flex flex-col font-mono text-white mb-6 font-bold">
-                      Guardian Phone Number
+                      Parents Phone Number
                       <input
                         className="text-base focus:outline-none w-full h-8 rounded mt-4 pl-2 pr-2 text-white font-mono font-normal bg-primary-black border-[1px] border-[#374151]"
                         value={data.guardian_phone}
