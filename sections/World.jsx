@@ -24,29 +24,39 @@ const World = () => (
       >
         <div className="flex justify-center items-center flex-wrap gap-10 relative p-10">
           <img
+            src="./assets/5.svg"
+            alt="sponsors"
+            className="w-[200px] h-[200px] sm:w-[300px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
+          />
+          <img
+            src="./assets/6.svg"
+            alt="sponsors"
+            className="w-[200px] h-[200px] sm:w-[300px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
+          />
+          <img
             src="./sponsors/1.png"
             alt="sponsors"
-            className="w-[300px] h-[200px] sm:w-[400px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
+            className="w-[200px] h-[200px] sm:w-[300px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
           />
           <img
             src="./sponsors/2.png"
             alt="sponsors"
-            className="w-[300px] h-[200px] sm:w-[400px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
+            className="w-[200px] h-[200px] sm:w-[300px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
           />
           <img
             src="./sponsors/3.png"
             alt="sponsors"
-            className="w-[300px] h-[200px] sm:w-[400px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
+            className="w-[200px] h-[200px] sm:w-[300px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
           />
           <img
             src="./sponsors/4.png"
             alt="sponsors"
-            className="w-[300px] h-[200px] sm:w-[400px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
+            className="w-[200px] h-[200px] sm:w-[300px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
           />
           <img
             src="./sponsors/5.png"
             alt="sponsors"
-            className="w-[300px] h-[200px] sm:w-[400px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
+            className="w-[300px] h-[200px] sm:w-[300px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
           />
         </div>
       </motion.div>
@@ -60,22 +70,22 @@ const World = () => (
             <img
               src="./assets/1.png"
               alt="sponsors"
-              className="w-[150px] h-fit sm:w-[400px] sm:h-[400px] object-contain p-10 "
+              className="w-[150px] h-fit sm:w-[300px] sm:h-[400px] object-contain p-10 "
             />
             <img
               src="./assets/2.png"
               alt="sponsors"
-              className="w-[150px] h-fit sm:w-[400px] sm:h-[400px] object-contain p-10 "
+              className="w-[150px] h-fit sm:w-[300px] sm:h-[400px] object-contain p-10 "
             />
             <img
               src="./assets/3.png"
               alt="sponsors"
-              className="w-[150px] h-fit sm:w-[400px] sm:h-[400px] object-contain p-10"
+              className="w-[150px] h-fit sm:w-[300px] sm:h-[400px] object-contain p-10"
             />
             <img
               src="./assets/4.png"
               alt="sponsors"
-              className="w-[150px] h-fit sm:w-[400px] sm:h-[400px] object-contain p-10"
+              className="w-[150px] h-fit sm:w-[300px] sm:h-[400px] object-contain p-10"
             />
           </div>
         </motion.div>
