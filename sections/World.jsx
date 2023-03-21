@@ -20,18 +20,33 @@ const World = () => (
 
       <motion.div
         variants={fadeIn('up', 'tween', 0.3, 1)}
-        className="relative justify-center items-center  flex w-full h-fit sm:h-[250px]"
+        className="relative justify-center items-center  flex w-full h-fit sm:h-fit"
       >
-        <div className="flex justify-center items-center flex-wrap">
+        <div className="flex justify-center items-center flex-wrap gap-10 relative p-10">
           <img
-            src="./assets/5.svg"
+            src="./sponsors/1.png"
             alt="sponsors"
-            className="w-[300px] h-[200px] sm:w-[400px] sm:h-[200px] object-contain px-10 "
+            className="w-[300px] h-[200px] sm:w-[400px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
           />
           <img
-            src="./assets/6.svg"
+            src="./sponsors/2.png"
             alt="sponsors"
-            className="w-[300px] h-[200px] sm:w-[400px] sm:h-[200px] object-contain px-10 "
+            className="w-[300px] h-[200px] sm:w-[400px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
+          />
+          <img
+            src="./sponsors/3.png"
+            alt="sponsors"
+            className="w-[300px] h-[200px] sm:w-[400px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
+          />
+          <img
+            src="./sponsors/4.png"
+            alt="sponsors"
+            className="w-[300px] h-[200px] sm:w-[400px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
+          />
+          <img
+            src="./sponsors/5.png"
+            alt="sponsors"
+            className="w-[300px] h-[200px] sm:w-[400px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
           />
         </div>
       </motion.div>
