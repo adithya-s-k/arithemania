@@ -31,6 +31,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import { db } from '../firebase/firebase';
 import 'react-toastify/dist/ReactToastify.css';
 import styles from '../styles';
+import Link from 'next/link';
 
 export default function Registrations() {
   const [cookies, setCookie] = useCookies(['completedRegistration']);
@@ -407,6 +408,17 @@ export default function Registrations() {
 
             <label className="text-lg flex flex-col font-mono text-white mb-6 font-bold w-full">
               Solution
+              <div>
+                Here is the format we are looking for:
+                <ul className="list-disc list-inside text-sm">
+                  <li>Problem Statement</li>
+                  <li>Proposed Solution</li>
+                  <li>Approach</li>
+                  <li>Use Case</li>
+                  <li>Feasibility</li>
+                  <li>Tech Stack</li>
+                </ul>
+              </div>
               <textarea
                 className="text-base focus:outline-none w-full min-h-40 rounded mt-4 pl-2 pr-2 text-white font-mono font-normal bg-transparent border-[1px] border-[#374151]"
                 value={solution}
@@ -415,7 +427,17 @@ export default function Registrations() {
             </label>
 
             <label className="text-lg flex flex-col font-mono text-white mb-6 font-bold w-full">
-              Github Link
+              Idea Presentation Link
+              <div className="text-sm">
+                You can follow the following template and submit it as a link -
+                <Link
+                  href="https://docs.google.com/presentation/d/1btIy1lI56-jyK-u-1Xa4Zw1CnvnEksqlNrfKwaSkN9g/edit?usp=sharing"
+                  target="_blank"
+                >
+                  <span className="text-xl text-blue-400"> Idea template</span>
+                </Link>
+                {`(Optional)`}
+              </div>
               <input
                 className="text-base focus:outline-none w-full h-12 rounded mt-4 pl-2 pr-2 text-white font-mono font-normal bg-transparent border-[1px] border-[#374151]"
                 value={link}
