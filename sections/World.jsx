@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 import styles from '../styles';
 import { TitleText } from '../components';
@@ -43,11 +44,13 @@ const World = () => (
             alt="sponsors"
             className="w-[200px] h-[200px] sm:w-[300px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
           />
-          <img
-            src="./sponsors/3.png"
-            alt="sponsors"
-            className="w-[200px] h-[200px] sm:w-[300px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
-          />
+          <Link href="https://taskade.com/" target="_blank">
+            <img
+              src="./sponsors/3.png"
+              alt="taskade"
+              className="w-[200px] h-[200px] sm:w-[300px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full hover:scale-110 transition-all duration-300 ease-in-out hover:bg-white"
+            />
+          </Link>
           <img
             src="./sponsors/4.png"
             alt="sponsors"
