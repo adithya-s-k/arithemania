@@ -79,7 +79,7 @@ export const newFeatures = [
   {
     imgUrl: './icons/map.svg',
     title: 'Venue',
-    subtitle: 'PESU52, Bangalore',
+    subtitle: 'PESU 52',
   },
   {
     imgUrl: './icons/online-learning.svg',
@@ -89,7 +89,7 @@ export const newFeatures = [
   {
     imgUrl: './icons/calendar.svg',
     title: 'DeadLine',
-    subtitle: '11:59 PM 31th March 2023',
+    subtitle: '11:59 PM 31st March 2023',
   },
 ];
 
