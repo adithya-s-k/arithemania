@@ -358,6 +358,11 @@ export default function Registrations() {
           <p className="font-extrabold text-2xl text-white">
             Thank you for submitting!
           </p>
+          <div className="text-lg flex flex-col font-mono text-white mb-6 font-bold w-full">
+            if any queries please contact{' '}
+            <span className="text-blue-400">shunya@pes.edu</span>
+            or any of our socials
+          </div>
         </div>
       </div>
     );
@@ -369,6 +374,11 @@ export default function Registrations() {
             onSubmit={validateData}
             className="flex flex-col text-left items-center w-full sm:rounded-[20px] sm:border-[1px] sm:border-[#6A6A6A] relative sm:p-10 sm:gradient-05"
           >
+            <div className="text-lg flex flex-col font-mono text-white mb-6 font-bold w-full">
+              if any queries please contact{' '}
+              <span className="text-blue-400">shunya@pes.edu</span>
+              or any of our socials
+            </div>
             <label className="text-lg flex flex-col font-mono text-white mb-6 font-bold w-full">
               Team Name
               <input
@@ -436,7 +446,7 @@ export default function Registrations() {
                 >
                   <span className="text-xl text-blue-400"> Idea template</span>
                 </Link>
-                {`(Optional)`}
+                (Optional)
               </div>
               <input
                 className="text-base focus:outline-none w-full h-12 rounded mt-4 pl-2 pr-2 text-white font-mono font-normal bg-transparent border-[1px] border-[#374151]"
