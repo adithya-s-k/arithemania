@@ -110,7 +110,7 @@ export default function Registrations() {
   );
   const [problemStatement, setProblemStatement] = useState('');
   const [solution, setSolution] = useState('');
-  const [link, setLink] = useState('');
+  const [link, setLink] = useState('(Optional PPT Link)');
 
   const [registeredTeams, setRegisteredTeams] = useState([]);
 
@@ -168,10 +168,10 @@ export default function Registrations() {
       toast('Solution cannot be empty');
       return;
     }
-    if (link.length === 0) {
-      toast('Link cannot be empty');
-      return;
-    }
+    // if (link.length === 0) {
+    //   toast('Link cannot be empty');
+    //   return;
+    // }
     for (let i = 0; i < teamMembers.length; i++) {
       const member = teamMembers[i];
       if (member.name.length === 0) {
