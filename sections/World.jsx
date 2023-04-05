@@ -61,6 +61,11 @@ const World = () => (
             alt="sponsors"
             className="w-[300px] h-[200px] sm:w-[300px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
           />
+          <img
+            src="./sponsors/echo.png"
+            alt="sponsors"
+            className="w-[300px] h-[200px] sm:w-[300px] sm:h-[200px] object-contain px-10 bg-slate-300 rounded-full"
+          />
         </div>
       </motion.div>
       <TypingTextLarge title="In Collaboration with" textStyles="text-center" />
