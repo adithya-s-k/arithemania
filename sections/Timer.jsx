@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const Timer = ({ type }) => {
-  const futureTime = new Date('2023-04-09T11:00:00');
+  const futureTime = new Date('2023-04-09T14:00:00');
   const [seconds, setSeconds] = useState(
     Math.floor((futureTime.getTime() - Date.now()) / 1000)
   );
