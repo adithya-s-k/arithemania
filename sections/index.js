@@ -6,7 +6,7 @@ import WhatsNew from './WhatsNew';
 import World from './World';
 import Insights from './Insights';
 import Feedback from './Feedback';
-import Timer from './Timer';
+// import Timer from './Timer';
 
 export {
   Hero,
@@ -17,5 +17,5 @@ export {
   World,
   Insights,
   Feedback,
-  Timer,
+  // Timer,
 };

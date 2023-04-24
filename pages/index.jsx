@@ -6,7 +6,7 @@ import {
   Hero,
   WhatsNew,
   World,
-  Timer,
+  // Timer,
 } from '../sections';
 // import FAQ from '../sections/FAQ';
 // import styles from '../styles';
@@ -19,9 +19,9 @@ const Home = () => (
         <Navbar />
         <Hero />
       </div>
-      <span className="pt-16 md:mt-24 my-8">
+      {/* <span className="pt-16 md:mt-24 my-8">
         <Timer type={false} />
-      </span>
+      </span> */}
     </div>
     <div className="relative">
       <About />
